@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitLinker</title>
+</head>
+
+<body>
+
+    <form id="git-method">
+        <label for="git-clone">Clone GitLab projects</label>
+        <input type="radio" id="git-clone" name="method" value="clone">
+        <label for="git-pull">Pull GitLab projects</label>
+        <input type="radio" id="git-pull" name="method" value="pull">
+    </form>
+
+    <form id="credentials">
+        <p>GitLab credentials</p>
+        <label for="user-login">Login</label>
+        <input type="text" id="user-login">
+        <label for="user-pwd">Password</label>
+        <input type="password" id="user-pwd">
+    </form>
+
+    <form id="add-project">
+        <label for="project-name">Project Name</label>
+        <input type="text" id="project-name">
+        <label for="project-link">Project Link</label>
+        <input type="text" id="project-link">
+        <button type="submit">Add</button>
+    </form>
+
+    <p>GitLab Projects</p>
+    <ul id="project-list"></ul>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
