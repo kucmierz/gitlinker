@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitLinker</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <form id="git-method">
         <label for="git-clone">Clone GitLab projects</label>
-        <input type="radio" id="git-clone" name="method" value="clone">
+        <input type="radio" id="git-clone" name="method" value="clone" checked>
         <label for="git-pull">Pull GitLab projects</label>
         <input type="radio" id="git-pull" name="method" value="pull">
+        <button type="submit">Execute</button>
     </form>
 
-    <form id="credentials">
+    <form id="credentials" class="credentials-off">
         <p>GitLab credentials</p>
         <label for="user-login">Login</label>
         <input type="text" id="user-login">
@@ -36,6 +38,7 @@
     <p>GitLab Projects</p>
     <ul id="project-list"></ul>
 
+    <script src="https://unpkg.com/git.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
